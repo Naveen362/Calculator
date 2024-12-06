@@ -1,0 +1,80 @@
+/* Style for the calculator container */
+.calculator {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for the input field */
+  .calculator input {
+    width: 100%;
+    padding: 15px;
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  /* Style for the button grid */
+  .calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  /* Style for each button */
+  .calculator-buttons button {
+    padding: 20px;
+    font-size: 18px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .calculator-buttons button:hover {
+    background-color: #bbb;
+  }
+  
+  /* Style for operator buttons */
+  .calculator-buttons button[value="/"],
+  .calculator-buttons button[value="*"],
+  .calculator-buttons button[value="-"],
+  .calculator-buttons button[value="+"] {
+    background-color: #ff6b6b;
+    color: white;
+  }
+  
+  .calculator-buttons button[value="/"]:hover,
+  .calculator-buttons button[value="*"]:hover,
+  .calculator-buttons button[value="-"]:hover,
+  .calculator-buttons button[value="+"]:hover {
+    background-color: #ff4d4d;
+  }
+  
+  /* Style for equals button */
+  .calculator-buttons button[value="="] {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .calculator-buttons button[value="="]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style for AC (Clear) button */
+  .calculator-buttons button[value="AC"] {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .calculator-buttons button[value="AC"]:hover {
+    background-color: #e53935;
+  }
+  
